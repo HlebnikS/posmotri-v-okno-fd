@@ -92,7 +92,7 @@ ol {
   position: relative;
 }
 
-.content__list-container .content__list-item:last-child {
+.content__list-item:last-child {
   margin-bottom: 30px;
 }
 
@@ -264,7 +264,7 @@ ol {
   opacity: 1;
 }
 
-.search-form__label:hover {
+.search-form__label:has(.search-form__checkbox):hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -282,6 +282,8 @@ ol {
   background-color: transparent;
   outline: none;
   cursor: pointer;
+  border: 1px solid #fff;
+  height: 34px;
 }
 
 .button:hover {
@@ -301,14 +303,11 @@ ol {
 }
 
 .search-form__submit-button {
-  border: 1px solid #fff;
   width: 194px;
-  height: 34px;
   align-self: flex-end;
 }
 
 .more-button {
-  border: 1px solid #fff;
   width: 100%;
   padding: 6px 0;
 }
